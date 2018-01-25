@@ -13,7 +13,10 @@
 ## Usage
 
 ~~~bash
-jbono@MacBook [~]> nmap --script http-host.nse --script-args "http-host.host_header='evilsite.com'" google.com
+[~]> nmap -sV -T4 -p80
+          --script http-host.nse 
+          --script-args "http-host.host_header='evilsite.com'" 
+          google.com
 
  @output
  PORT   STATE SERVICE
